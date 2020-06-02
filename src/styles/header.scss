@@ -1,0 +1,54 @@
+@import "palette";
+
+.header {
+  height: 55px;
+  background: $SECONDARY-1;
+
+  .nav {
+    height: 100%;
+    padding-left: 15px;
+
+    .menu-primary-container {
+      display: flex;
+      align-items: center;
+
+      .menu {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+
+        .menu-item {
+          position: relative;
+
+          a {
+            color: $PRIMARY-1;
+            font-size: 0.8125em;
+
+            &:hover {
+              text-decoration: none;
+              opacity: 0.8;
+            }
+          }
+
+          &:first-of-type::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background: $PRIMARY-1;
+            top: 0;
+            right: -20px;
+            opacity: 0.7;
+          }
+
+          &.current-menu-item {
+            a {
+              color: $ACCENT-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*
+Theme Name: Titus Plus
+Author: Adam Horodyski
+Description: Titus plus theme is envisioned to mock the titusplus.com webpage.
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+html, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@import "typography";
+@import "globals";
+@import "header";
+@import "footer";
+@import "hero";
+@import "catalogue";

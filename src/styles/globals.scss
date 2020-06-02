@@ -1,0 +1,14 @@
+@import "palette";
+
+.button {
+  padding: .8em 1.25em;
+  border: solid 2px $ACCENT-1;
+  color: $ACCENT-1;
+  line-height: 1.2;
+
+  &:hover {
+    text-decoration: none;
+    color: $ACCENT-1;
+    opacity: 0.8;
+  }
+}
