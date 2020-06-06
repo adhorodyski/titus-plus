@@ -7,8 +7,10 @@
   .nav {
     height: 100%;
     padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
 
-    .menu-primary-container {
+    .menu-main-container {
       display: flex;
       align-items: center;
 
@@ -48,6 +50,18 @@
             }
           }
         }
+      }
+    }
+
+    .contact-us {
+      display: flex;
+      align-items: center;
+      color: $PRIMARY-1;
+      font-size: 0.8125em;
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
       }
     }
   }

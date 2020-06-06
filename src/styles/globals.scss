@@ -1,14 +1,32 @@
-@import "palette";
+#content {
+  .wp-block-group__inner-container,
+  .wp-block-cover__inner-container {
+    @extend .container;
 
-.button {
-  padding: .8em 1.25em;
-  border: solid 2px $ACCENT-1;
-  color: $ACCENT-1;
-  line-height: 1.2;
+    .wp-block-group__inner-container {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wp-block-columns {
+      margin: 0;
+    }
+  }
+}
+
+.wp-block-buttons .wp-block-button {
+  margin: 0;
 
   &:hover {
-    text-decoration: none;
-    color: $ACCENT-1;
-    opacity: 0.8;
+
+    .wp-block-button__link {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
+
+  .wp-block-button__link {
+    transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+    font-size: 14px;
   }
 }

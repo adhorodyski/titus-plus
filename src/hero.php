@@ -1,1 +1,0 @@
-<div>Hero banner</div>

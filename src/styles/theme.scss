@@ -14,9 +14,9 @@ html, * {
   outline: none;
 }
 
+@import "bootstrap";
 @import "typography";
 @import "globals";
 @import "header";
 @import "footer";
 @import "hero";
-@import "catalogue";

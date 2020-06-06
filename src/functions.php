@@ -54,14 +54,6 @@
             false,
             'all'
         );
-
-        wp_enqueue_style(
-            'bootstrap-styles',
-            'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css',
-            false,
-            NULL,
-            'all'
-        );
     }
     add_action( 'wp_enqueue_scripts', 'theme_styles' );
 

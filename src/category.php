@@ -1,5 +1,5 @@
 <?php get_header();?>
 
-    category page test
+    Category test
 
 <?php get_footer();?>

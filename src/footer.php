@@ -1,7 +1,7 @@
-        <footer class="footer container">
-            <span class="copyright">© 2020 Titus Plus | Stolargo</span>
-            <nav class="footer__menu">
-
+        <footer class="footer">
+            <nav class="nav container" role="navigation">
+                <span class="copyright">© 2020 Titus Plus | Stolargo</span>
+                <a href="/index.php/formularz-kontaktowy" class="menu-item">Formularz kontaktowy</a>
             </nav>
 		</footer>
 		<?php wp_footer(); ?>

@@ -3,10 +3,16 @@
     <main role="main" aria-label="Content">
         <!-- section -->
           <section id="content" role="main">
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php get_template_part( 'catalogue' ); ?>
-            <?php endwhile; endif; ?>
-            <?php get_template_part( 'nav', 'below' ); ?>
+
+            <?php
+                if (have_posts()) {
+                    while (have_posts()) {
+                        the_post();
+                        the_content();
+                    }
+                }
+            ?>
+
           </section>
         <!-- /section -->
       </main>

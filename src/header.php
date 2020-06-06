@@ -17,6 +17,7 @@
         					<!-- nav -->
         					<nav class="nav container" role="navigation">
         						<?php wp_nav_menu(); ?>
+        						<a href="/index.php/kontakt" class="contact-us">Kontakt</a>
         					</nav>
         					<!-- /nav -->
 
