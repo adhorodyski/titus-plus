@@ -1,67 +1,108 @@
 @import "palette";
 
 .header {
-  height: 55px;
-  background: $SECONDARY-1;
+  position: relative;
 
-  .nav {
-    height: 100%;
-    padding-left: 15px;
+  .header-inner {
     display: flex;
-    justify-content: space-between;
 
-    .menu-main-container {
+    &__primary {
+      height: 55px;
+      background: $SECONDARY-1;
+
+      .nav {
+        justify-content: space-between;
+
+        .menu-container .menu .menu-item a {
+          font-size: 0.8125em;
+          color: $PRIMARY-1;
+        }
+      }
+    }
+
+    &__secondary {
+      height: 130px;
+      background: $PRIMARY-1;
+
+      .nav {
+        justify-content: flex-start;
+
+        .logo {
+          display: flex;
+          width: 32px;
+          height: max-content;
+          margin-right: 60px;
+        }
+
+        .menu-container .menu .menu-item a {
+          color: $SECONDARY-1;
+          font-size: .9em;
+        }
+      }
+    }
+
+    .nav {
+      height: 100%;
+      padding-left: 15px;
       display: flex;
       align-items: center;
 
-      .menu {
-        list-style: none;
+      .menu-container {
         display: flex;
-        gap: 40px;
-        margin: 0;
+        align-items: center;
 
-        .menu-item {
-          position: relative;
+        .menu {
+          list-style: none;
+          display: flex;
+          margin: 0;
 
-          a {
-            color: $PRIMARY-1;
-            font-size: 0.8125em;
+          .menu-item {
+            position: relative;
 
-            &:hover {
-              text-decoration: none;
-              opacity: 0.8;
-            }
-          }
-
-          &:first-of-type::after {
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 1px;
-            background: $PRIMARY-1;
-            top: 0;
-            right: -20px;
-            opacity: 0.7;
-          }
-
-          &.current-menu-item {
             a {
+              transition: opacity 0.2s;
+              padding: 20px;
+
+              &:hover {
+                text-decoration: none;
+                opacity: 0.8;
+              }
+            }
+
+            &:first-of-type::after {
+              content: '';
+              position: absolute;
+              height: 100%;
+              width: 1px;
+              background: $PRIMARY-1;
+              top: 0;
+              right: 0;
+              opacity: 0.7;
+            }
+
+            &.current-menu-parent > .sub-menu {
+              display: none;
+            }
+
+            &.current-menu-item > a,
+            &.current-menu-parent > a,
+            &.current-page-ancestor a {
               color: $ACCENT-1;
             }
           }
         }
       }
-    }
 
-    .contact-us {
-      display: flex;
-      align-items: center;
-      color: $PRIMARY-1;
-      font-size: 0.8125em;
+      .contact-us {
+        display: flex;
+        align-items: center;
+        color: $PRIMARY-1;
+        font-size: 0.8125em;
 
-      &:hover {
-        text-decoration: none;
-        opacity: 0.8;
+        &:hover {
+          text-decoration: none;
+          opacity: 0.8;
+        }
       }
     }
   }

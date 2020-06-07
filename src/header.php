@@ -14,11 +14,32 @@
         			<!-- header -->
         			<header class="header" role="banner">
 
-        					<!-- nav -->
-        					<nav class="nav container" role="navigation">
-        						<?php wp_nav_menu(); ?>
-        						<a href="/index.php/kontakt" class="contact-us">Kontakt</a>
-        					</nav>
+        					<!-- primary nav -->
+        			        <div class="header-inner header-inner__primary">
+
+        			            <nav class="nav container" role="navigation">
+                                    <?php wp_nav_menu(
+                                        array("theme_location" => "primary-menu", "container_class" => "menu-container menu-container__primary" )
+                                    ); ?>
+                                    <a href="/index.php/kontakt" class="contact-us">Kontakt</a>
+                                </nav>
+
+        			        </div>
+        					<!-- /nav -->
+
+        					<!-- secondary nav -->
+        			        <div class="header-inner header-inner__secondary">
+
+        			            <nav class="nav container" role="navigation">
+        			                <div class="logo">
+        			                    <img class="logo__image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo-side.png" />
+        			                </div>
+                                    <?php wp_nav_menu(
+                                        array("theme_location" => "secondary-menu", "container_class" => "menu-container menu-container__secondary" )
+                                    ); ?>
+                                </nav>
+
+        			        </div>
         					<!-- /nav -->
 
         			</header>
