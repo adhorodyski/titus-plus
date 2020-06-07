@@ -31,9 +31,9 @@
         			        <div class="header-inner header-inner__secondary">
 
         			            <nav class="nav container" role="navigation">
-        			                <div class="logo">
-        			                    <img class="logo__image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo-side.png" />
-        			                </div>
+        			                <a class="logo" href="/index.php">
+        			                    <img class="logo__image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png" />
+        			                </a>
                                     <?php wp_nav_menu(
                                         array("theme_location" => "secondary-menu", "container_class" => "menu-container menu-container__secondary" )
                                     ); ?>

@@ -12,6 +12,10 @@
       margin: 0;
     }
   }
+
+  .wp-block-cover__inner-container {
+    padding-right: 25%;
+  }
 }
 
 .wp-block-buttons .wp-block-button {
@@ -28,5 +32,21 @@
   .wp-block-button__link {
     transition: opacity 0.2s, color 0.2s, border-color 0.2s;
     font-size: 14px;
+  }
+}
+
+.wp-block-table {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    td {
+      border-bottom: 1px solid $PRIMARY-2;
+      padding: 15px 0;
+
+      &:first-child {
+        width: 40%;
+      }
+    }
   }
 }
