@@ -1,3 +1,7 @@
+/*
+    CONTAINER
+*/
+
 #content {
   &.header-fixed {
     padding-top: 130px;
@@ -22,22 +26,27 @@
   }
 }
 
+/*
+    BUTTON
+*/
+
 .wp-block-buttons .wp-block-button {
   margin: 0;
-
-  &:hover {
-
-    .wp-block-button__link {
-      opacity: 0.8;
-      text-decoration: none;
-    }
-  }
 
   .wp-block-button__link {
     transition: opacity 0.2s, color 0.2s, border-color 0.2s;
     font-size: 14px;
+
+    &:hover {
+      opacity: 0.8;
+      text-decoration: none;
+    }
   }
 }
+
+/*
+    TABLE
+*/
 
 .wp-block-table {
   table {
@@ -52,5 +61,15 @@
         width: 40%;
       }
     }
+  }
+}
+
+/*
+    IMAGE
+*/
+
+.wp-block-image {
+  img {
+    object-fit: contain;
   }
 }

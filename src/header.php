@@ -22,6 +22,9 @@
                                         array("theme_location" => "primary-menu", "container_class" => "menu-container menu-container__primary" )
                                     ); ?>
                                     <a href="/index.php/kontakt" class="contact-us">Kontakt</a>
+                                    <button class="hamburger-menu close">
+                                        <span class="hamburger-menu__icon"></span>
+                                    </button>
                                 </nav>
 
         			        </div>
@@ -37,6 +40,9 @@
                                     <?php wp_nav_menu(
                                         array("theme_location" => "secondary-menu", "container_class" => "menu-container menu-container__secondary" )
                                     ); ?>
+                                    <button class="hamburger-menu open">
+                                        <span class="hamburger-menu__icon"></span>
+                                    </button>
                                 </nav>
 
         			        </div>
