@@ -62,7 +62,13 @@
     // ---------------------------------
 
     function add_javascript() {
-        wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts/main.min.js', false, false, true);
+        wp_enqueue_script(
+            'script',
+            get_template_directory_uri() . '/scripts/main.min.js',
+            false,
+            false,
+            true
+        );
     }
 
     add_action('wp_enqueue_scripts', 'add_javascript');

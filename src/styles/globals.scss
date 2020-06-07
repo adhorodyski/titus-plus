@@ -1,4 +1,8 @@
 #content {
+  &.header-fixed {
+    padding-top: 130px;
+  }
+
   .wp-block-group__inner-container,
   .wp-block-cover__inner-container {
     @extend .container;
