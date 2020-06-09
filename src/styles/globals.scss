@@ -1,3 +1,5 @@
+@import "breakpoints";
+
 /*
     CONTAINER
 */
@@ -5,6 +7,10 @@
 #content {
   &.header-fixed {
     padding-top: 130px;
+
+    @media (max-width: $mobileBreakpoint) {
+      padding-top: 60px;
+    }
   }
 
   .wp-block-group__inner-container,
