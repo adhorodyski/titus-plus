@@ -38,3 +38,20 @@
     }
   }
 }
+
+.home {
+  .footer {
+    background: $SECONDARY-1;
+    border-top: 1px solid $SECONDARY-2;
+
+    .nav {
+      a, .copyright {
+        color: $PRIMARY-1;
+      }
+
+      .copyright::after {
+        background: $PRIMARY-1;
+      }
+    }
+  }
+}

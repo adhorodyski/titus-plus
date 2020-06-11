@@ -27,9 +27,14 @@
     }
   }
 
-  .wp-block-cover__inner-container {
-    padding-right: 25%;
+  .wp-block-cover {
+    &:not(.full-size-cover) {
+      .wp-block-cover__inner-container {
+        padding-right: 25%;
+      }
+    }
   }
+
 }
 
 /*
