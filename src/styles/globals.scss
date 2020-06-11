@@ -28,13 +28,30 @@
   }
 
   .wp-block-cover {
-    &:not(.full-size-cover) {
+    &:not(.full-screen-cover) {
       .wp-block-cover__inner-container {
         padding-right: 25%;
       }
     }
-  }
 
+    &.full-screen-cover {
+      padding: 150px 0;
+    }
+  }
+}
+
+/*
+  HOME VARIANT CONTAINER
+*/
+
+.home #content {
+  &.header-fixed {
+    padding-top: 0;
+
+    @media (max-width: $mobileBreakpoint) {
+      padding-top: 0;
+    }
+  }
 }
 
 /*

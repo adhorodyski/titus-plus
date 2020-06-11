@@ -301,3 +301,45 @@
     }
   }
 }
+
+/*
+  HOME VARIANT
+*/
+
+.home {
+  position: relative;
+
+  .header .header-inner {
+    &__primary {
+      border-bottom: 1px solid $SECONDARY-2;
+    }
+
+    &__secondary {
+      position: absolute;
+      background: transparent;
+      box-shadow: none;
+      top: 55px;
+      left: 0;
+      width: 100%;
+
+      @media (max-width: $mobileBreakpoint) {
+        position: fixed;
+        top: 0;
+      }
+
+      .hamburger-menu {
+        &__icon {
+          background: $PRIMARY-1;
+
+          &::before {
+            background: $PRIMARY-1;
+          }
+
+          &::after {
+            background: $PRIMARY-1;
+          }
+        }
+      }
+    }
+  }
+}
