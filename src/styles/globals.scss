@@ -102,3 +102,14 @@
     object-fit: contain;
   }
 }
+
+
+/*
+    EMBED IFRAME
+*/
+
+.wp-block-embed {
+  iframe {
+    max-width: 100%;
+  }
+}
