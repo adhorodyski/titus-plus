@@ -11,6 +11,10 @@
 
       #content {
         height: 100%;
+
+        .wp-block-cover .wp-block-group a {
+          color: $PRIMARY-1;
+        }
       }
     }
   }
