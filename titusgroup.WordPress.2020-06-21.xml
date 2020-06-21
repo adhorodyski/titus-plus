@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/5.4" created="2020-06-20 15:50" -->
+	<!-- generator="WordPress/5.4" created="2020-06-21 16:51" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Titus Group</title>
 	<link>//localhost:3000</link>
 	<description></description>
-	<pubDate>Sat, 20 Jun 2020 15:50:18 +0000</pubDate>
+	<pubDate>Sun, 21 Jun 2020 16:51:29 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>//localhost:3000</wp:base_site_url>
@@ -8440,33 +8440,7 @@
 		<dc:creator><![CDATA[adhorodyski]]></dc:creator>
 		<guid isPermaLink="false">//localhost:3000/?page_id=306</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:group {"customBackgroundColor":"#ffffff"} -->
-<div class="wp-block-group has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":40} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"align":"center"} -->
-<h2 class="has-text-align-center">Dane kontaktowe</h2>
-<!-- /wp:heading -->
-
-<!-- wp:spacer {"height":40} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">STOLARGO S.C, NIP: 7343216884, REGON: 122980018 </p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Bank: ING BANK ŚLĄSKI. Nr rachunku bankowego: 55 1050 1722 1000 0092 7542 2872</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:spacer {"height":40} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"backgroundColor":"very-light-gray"} -->
+		<content:encoded><![CDATA[<!-- wp:group {"backgroundColor":"very-light-gray"} -->
 <div class="wp-block-group has-very-light-gray-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":40} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
