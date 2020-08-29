@@ -1,0 +1,18 @@
+@import "palette";
+
+* {
+  font-family: Arial, Helvetica, Roboto, sans-serif;
+  color: $SECONDARY-1;
+}
+
+a {
+  color: initial;
+  opacity: 1;
+  transition: opacity 0.2s;
+
+  &:hover {
+    color: initial;
+    text-decoration: none;
+    opacity: 0.6;
+  }
+}

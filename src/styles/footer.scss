@@ -1,0 +1,57 @@
+@import "palette";
+
+.footer {
+  height: 80px;
+  background: $PRIMARY-1;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 15px;
+    gap: 40px;
+
+    a, .copyright {
+      color: $SECONDARY-1;
+      font-size: 0.8125em;
+    }
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .copyright {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background: $SECONDARY-1;
+        top: 0;
+        right: -20px;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.home {
+  .footer {
+    background: $SECONDARY-1;
+    border-top: 1px solid $SECONDARY-2;
+
+    .nav {
+      a, .copyright {
+        color: $PRIMARY-1;
+      }
+
+      .copyright::after {
+        background: $PRIMARY-1;
+      }
+    }
+  }
+}

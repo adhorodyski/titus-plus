@@ -1,0 +1,21 @@
+.page {
+  &.home {
+    min-height: 100vh;
+
+    main {
+      height: calc(100vh - 135px);
+
+      @media (max-width: $mobileBreakpoint) {
+        height: calc(100vh - 80px);
+      }
+
+      #content {
+        height: 100%;
+
+        .wp-block-cover .wp-block-group a {
+          color: $PRIMARY-1;
+        }
+      }
+    }
+  }
+}
